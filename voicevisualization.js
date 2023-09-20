@@ -13,7 +13,7 @@ var canvasCtx = canvas.getContext("2d");
 // Start recording and visualizing the audio stream
 function startRecording(stream) {
   isRecording = true;
-  button_img.src = "stop.png";
+  button_img.src = "img/stop.png";
   // Create an audio context and an analyser
   audioCtx = new AudioContext();
   const analyser = audioCtx.createAnalyser();
@@ -103,7 +103,7 @@ function stopRecording() {
   canvasCtx.reset();
   cancelAnimationFrame(drawVisual);
   isRecording = false;
-  button_img.src = "play.png";
+  button_img.src = "img/play.png";
   audioCtx.close();
 }
 
