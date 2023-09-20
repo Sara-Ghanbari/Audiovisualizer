@@ -1,0 +1,66 @@
+/* Use a universal selector to apply common styles to all elements */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /*Remove the default margin*/
+  padding: 0; /*Remove the default padding*/
+  box-sizing: border-box; /*Include the border and padding in the element's width and height*/
+}
+
+/* Style the container div*/
+#container {
+  display: block; /*Display as a block element*/
+  position: absolute; /*Position it absolutely relative to its parent*/
+  background: rgb(254, 254, 254); /*Set the background color to white*/
+  box-shadow: inset 0px -33px 38px -38px #000000, inset 0px 7px 38px -8px black; /*Add some inner shadows for a 3D effect*/
+  width: 100%; /*Set the width to 100% of the parent's width*/
+  height: 200px; /*Set the height to 200 pixels*/
+  top: 300px; /*Set the top position to 300 pixels from the top edge of the parent*/
+  border: 2px solid rgb(247, 246, 246); /*Add a light gray border*/
+  border-radius: 5px; /*Add some rounded corners*/
+}
+/*Style the canvas element*/
+#canvas1 {
+  width: 100%; /*Set the width to 100% of the parent's width */
+  height: 100%; /*Set the height to 100% of the parent's height */
+}
+
+/* Style the fieldset element for selecting the visualization type */
+#showOpts {
+  margin: 0 auto; /* Center it horizontally and vertically */
+  position: relative; /* Position it relative to its normal position */
+  width: fit-content; /* Set the width to fit its content */
+  vertical-align: middle; /* Align it vertically in the middle of its parent */
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: none;
+}
+/* Style the button element for toggling recording on or off */
+#button {
+  height: 70px; /* Set the height to 70 pixels */
+  border: none; /* Remove the default border */
+  background: none; /* Remove the default background color */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over it */
+  margin: 20px auto;
+}
+
+/* Style the image element inside the button element */
+#buttonImg {
+  height: 100%; /*Set the height to 100% of the parent's height*/
+  border: 1px solid rgb(220, 220, 220);
+  padding-left: 3px; /*Add a light gray border*/
+  border-radius: 50%; /*Make it a circle*/
+}
+/* Style the body element */
+body {
+  text-align: center; /*Center the text and elements horizontally*/
+}
+
+legend {
+  font-size: large;
+  font-weight: 550;
+}
+h1 {
+  margin-top: 240px;
+}

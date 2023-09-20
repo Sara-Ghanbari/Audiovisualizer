@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice Visualization</title>
+    <link rel="stylesheet" href="voicevisualizatio.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Voice Visualization</h1>
+      <div id="container">
+        <canvas id="canvas1"></canvas>
+
+        <button id="button"><img id="buttonImg" src="play.png" /></button>
+        <fieldset id="showOpts">
+          <legend>Select a Show Style for Voice Visualization:</legend>
+          <label for="barShow">Bar Show</label>
+          <input type="radio" id="barShow" name="opt" value="barShow" checked />
+
+          <label for="lineShow">Line Show</label>
+          <input type="radio" id="lineShow" name="opt" value="lineShow" />
+        </fieldset>
+      </div>
+
+      <script src="voicevisualization.js"></script>
+    </main>
+  </body>
+</html>
